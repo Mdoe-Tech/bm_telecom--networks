@@ -1315,17 +1315,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Trainings
+# READ MORE
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Trainings Gallery
 --------------------------------------------------------------*/
 .gallery .gallery-item {
   overflow: hidden;
+  padding-left:20px;
+  padding-left:20px;
   border-right: 3px solid #454035;
-  border-bottom: 3px solid #454035;
+ 
 }
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
 }
+
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
