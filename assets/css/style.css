@@ -1318,8 +1318,46 @@ section {
 # READ MORE
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# CAPTCHA
+# BOT
 --------------------------------------------------------------*/
+.chat_icon
+{
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+  font-size:40px;
+  color:red;
+  cursor: pointer;
+  z-index: 1000%;
+}
+
+.chat_box
+{
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  width: 250px;
+  height: 80vh;
+  background: silver;
+  z-index: 950;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+}
+
+.chat_box.active{
+  transform: scaleY(1);
+}
+.hidden{
+  display: none !important;
+}
+.conv-form-wrapper textarea{
+  height: 30px;
+  overflow: hidden;
+  resize: none;
+}
+#messages{
+  padding: 20px;
+}
 /*--------------------------------------------------------------
 # Trainings Gallery
 --------------------------------------------------------------*/

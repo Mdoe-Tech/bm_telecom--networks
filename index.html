@@ -18,7 +18,6 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
- 
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -42,6 +41,13 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.convform.css">
+  <script type="text/javascript" src="assets/js/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="custom.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.convform.js"></script>
+
+
+
 </head>
 
 <body>
@@ -60,6 +66,34 @@
       </div>
     </div>
   </section><!-- End Top Bar-->
+
+    <!-- Chat bot -->
+    <div class="chat_icon">
+      <i class="fa fa-comments" aria-hidden="true"></i>
+    </div>
+  
+    <div class="chat_box">
+      <div id="chat" class="conv-form-wrapper">
+      <form action="" method="GET" class="hidden">
+        <select name="programmer" data-conv-question="hello! how can i help you?">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        <div data-conv-fork="programmer">
+          <div data-conv-case="yes">
+             <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+          </div>
+          <div data-conv-case="no">
+            <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+              <option value="yes">Yes</option>
+              <option value="no">No..</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+     <!-- End Chat bot -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -803,7 +837,6 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
