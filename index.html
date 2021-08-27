@@ -75,19 +75,29 @@
     <div class="chat_box">
       <div id="chat" class="conv-form-wrapper">
       <form action="" method="GET" class="hidden">
-        <select name="programmer" data-conv-question="hello! how can i help you?">
+        <input type="text"  data-conv-question="Hello! welcome to BM Telecoms and Netorks Co Ltd" name="first-question">
+        <p><h5>Here is Our Services</h5> 
+            <ul>
+              <li>Telephony</li>
+              <li>Networking</li>
+              <li>Fiber Optics</li>
+              <li>Multimedia</li>
+              <li>Security System</li>
+              <li>Public Addressing System</li>
+              <li>IP Based Monitoring</li>
+            </ul>
+        </p>
+        <select name="category" data-conv-question="hello! can i help you?">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
+        <input type="text" name="name" data-conv-question="|Okay! Please, tell me your name first.">
+          <input type="text" data-conv-question="Ooowh, {name}:0! It's a pleasure to meet you." data-no-answer="true">
         <div data-conv-fork="programmer">
           <div data-conv-case="yes">
              <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
           </div>
-          <div data-conv-case="no">
-            <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
-              <option value="yes">Yes</option>
-              <option value="no">No..</option>
-            </select>
+          <input type="text" name="name" data-conv-question="|Okay! Please, tell me your name first.">
           </div>
         </div>
       </form>
