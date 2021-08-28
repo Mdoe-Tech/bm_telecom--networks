@@ -233,24 +233,6 @@
     }
 
   });
-
-   /**
-   * Initiate Gallery lightbox 
-   */
-
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  
-
   /**
    * Portfolio details slider
    */
@@ -297,6 +279,7 @@
     }
   });
 
+  
   /**
    * Animation on scroll
    */

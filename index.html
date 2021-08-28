@@ -38,16 +38,13 @@
   <script defer src="assets/vendor/font-awesome/js/all.js"></script>
   
 
-  <!-- Template Main CSS File -->
+  <!-- Template Main CSS File -->     
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="dist/css/glightbox.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/jquery.convform.css">
   <script type="text/javascript" src="assets/js/jquery-3.6.0.js"></script>
   <script type="text/javascript" src="custom.js"></script>
   <script type="text/javascript" src="assets/js/jquery.convform.js"></script>
-
-
-
 </head>
 
 <body>
@@ -75,31 +72,22 @@
     <div class="chat_box">
       <div id="chat" class="conv-form-wrapper">
       <form action="" method="GET" class="hidden">
-        <input type="text"  data-conv-question="Hello! welcome to BM Telecoms and Netorks Co Ltd" name="first-question">
-        <p><h5>Here is Our Services</h5> 
-            <ul>
-              <li>Telephony</li>
-              <li>Networking</li>
-              <li>Fiber Optics</li>
-              <li>Multimedia</li>
-              <li>Security System</li>
-              <li>Public Addressing System</li>
-              <li>IP Based Monitoring</li>
-            </ul>
-        </p>
-        <select name="category" data-conv-question="hello! can i help you?">
+        <select data-conv-question="Hello! welcome to BM Telecomms & Networks, can i help you?" name="first-question">
           <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-        <input type="text" name="name" data-conv-question="|Okay! Please, tell me your name first.">
-          <input type="text" data-conv-question="Ooowh, {name}:0! It's a pleasure to meet you." data-no-answer="true">
-        <div data-conv-fork="programmer">
-          <div data-conv-case="yes">
-             <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
-          </div>
-          <input type="text" name="name" data-conv-question="|Okay! Please, tell me your name first.">
-          </div>
-        </div>
+          <option value="sure">Sure!</option>
+      </select>
+      <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.">
+      <input type="text" data-conv-question="Howdy, {name}:0! It's a pleasure to meet you." data-no-answer="true">
+      <input type="text" data-conv-question="For More Information Please follow the Instructions." data-no-answer="true">
+      <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+      <input data-conv-question="Now tell me your valid phone number" type="number" data-minlength="10" id="senha" name="number" required placeholder="number">
+   <select data-conv-question="Also you can contact us through the following">
+   <option value="google" data-callback="mailto:info@bmtelecomms.co.tz">info@bmtelecomms.co.tz</option>
+   </select>
+      <select name="callbackTest" data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?">
+          <option value="yes" data-callback="rollback">Yes</option>
+          <option value="no" data-callback="restore">No</option>
+      </select>
       </form>
     </div>
     </div>
@@ -178,7 +166,6 @@
               </ul>
             </li>
           <li><a class="nav-link scrollto" href="#Projects">Projects</a></li>
-          <li><a class="nav-link scrollto" href="#Solutions">Solutions</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Trainings</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
 
@@ -275,160 +262,105 @@
       </div>
     </section><!-- End About Us Section -->
 
-    <!-- ======= Solution Section ======= -->
-
-    <section id="Solutions" class="solutions">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Solutions</h2>
-
-      <!-- ======= End Of Solutions Section ======= -->
-
-
        <!-- ======= Training Section ======= -->
-       <section id="gallery" class="gallery">
-        <div class="container">
-          <div class="section-title">
-            <h2>Trainings</h2>
-            <h3>Some photos from Our Trainings</h3>
-          </div>
-      <table>
-        <div class="container-fluid img-fluid float-left" data-aos="fade-up" data-aos-delay="100">
+                  <section id="gallery" class="gallery">
+                    <div class="container" data-aos="fade-up">
+                      <div class="section-title">
+                        <h2>Trainings</h2>
+                        <h3>Some photos from Our Trainings</h3>
+                      </div>
+                    <ul class="box-container three-cols">
+                        <li class="box">
+                            <div class="inner">
+                                <a
+                                    href="assets/img/Webiste Pictures/Hilti Tools Training 2.jpg"
+                                    class="glightbox2" data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="assets/img/Webiste Pictures/Hilti Tools Training 2.jpg" alt="image" />
+                                </a>
+                                <div class="glightbox-desc custom-desc1">
+                                  <p>
+                                      You can set the position of the description in different ways for example
+                                      <strong style="text-decoration: underline">top, bottom, left or right</strong>
+                                  </p>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="inner">
+                                <a href="assets/img/Webiste Pictures/Hilti Tools Training 2.jpg"
+                                 class="glightbox2" data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="assets/img/Webiste Pictures/Hilti Tools Training 2.jpg" alt="image" />
+                                </a>
 
-          <div class="row g-0">   
-
-              <div class="col-lg-4">
-                <figure >
-                <div class="gallery-item">
-                  <a href="assets/img/Webiste Pictures/Hilti Tools Training.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="assets/img/Webiste Pictures/Hilti Tools Training.jpg" alt="" class="img-fluid">
-                  </a>
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank" style="text-decoration: underline; font-weight: bold">Example Google link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="inner">
+                                <a href="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" class="glightbox2" data-glightbox="title: Description Right; description: .custom-desc2; descPosition: right;">
+                                    <img src="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" alt="image" />
+                                </a>
+                                <div class="glightbox-desc custom-desc2">
+                                    <p>You can set the position of the description in different ways for example top, bottom, left or right</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="box">
+                          <div class="inner">
+                              <a href="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" class="glightbox2" data-glightbox="title: Description Right; description: .custom-desc2; descPosition: right;">
+                                  <img src="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" alt="image" />
+                              </a>
+                              <div class="glightbox-desc custom-desc2">
+                                  <p>You can set the position of the description in different ways for example top, bottom, left or right</p>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="box">
+                        <div class="inner">
+                            <a href="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" class="glightbox2" data-glightbox="title: Description Right; description: .custom-desc2; descPosition: right;">
+                                <img src="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" alt="image" />
+                            </a>
+                            <div class="glightbox-desc custom-desc2">
+                                <p>You can set the position of the description in different ways for example top, bottom, left or right</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                      <div class="inner">
+                          <a href="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.44.jpeg" class="glightbox2" data-glightbox="title: Description Right; description: .custom-desc2; descPosition: right;">
+                              <img src="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.44.jpeg" alt="image" />
+                          </a>
+                          <div class="glightbox-desc custom-desc2">
+                              <p>You can set the position of the description in different ways for example top, bottom, left or right</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="box">
+                    <div class="inner">
+                        <a href="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.43.jpeg" class="glightbox2" data-glightbox="title: Description Left; description: .custom-desc2; descPosition:right;">
+                            <img src="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.43.jpeg" alt="image" />
+                        </a>
+                        <div class="glightbox-desc custom-desc2">
+                            <p>You can set the position of the description in different ways for example top, bottom, left or right</p>
+                        </div>
+                    </div>
+                </li>
+                    </ul>
                 </div>
-                <div class="card-body">
-                  <h4 class="card-title">Descrption Of Training</h4>
-                  <p class="card-text">Descrption Contents here.</p>
-                </div>
-                <figure >
-              </div>
-            
-              <div class="col-lg-4">
-                <figure >
-                <div class="gallery-item">
-                  <a href="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.43.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.43.jpeg" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Descrption Of Training</h4>
-                  <p class="card-text">Descrption Contents here.</p>
-                </div>
-              </figure>
-              </div>
-          
-            <div class="col-lg-4">
-              <figure >
-              <div class="gallery-item">
-                <a href="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                  <img  src="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Descrption Of Training</h4>
-                <p class="card-text">Descrption Contents here.</p>
-              </div>
-              </figure>
             </div>
-           
-              <div class="col-lg-4 col-md-3">
-                <figure>
-                <div class="gallery-item">
-                  <a href="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.44.jpeg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="assets/img/Webiste Pictures/WhatsApp Image 2021-08-26 at 07.02.44.jpeg" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Descrption Of Training</h4>
-                  <p class="card-text">Descrption Contents here.</p>
-                </div>
-              </figure>
-              </div>
-          
-            <div class="col-lg-4 col-md-3">
-              <figure>
-              <div class="gallery-item">
-                <a href="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                  <img src="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Descrption Of Training</h4>
-                <p class="card-text">Descrption Contents here.</p>
-              </div>
-            </figure>
-            </div>
-         
-              <div class="col-lg-4 col-md-3">
-                <figure>
-                <div class="gallery-item">
-                  <a href="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Descrption Of Training</h4>
-                  <p class="card-text">Descrption Contents here.</p>
-                </div>
-                <figure>
-              </div>
-            
-              <div class="col-lg-4 col-md-3">
-                <figure>
-                <div class="gallery-item">
-                  <a href="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Descrption Of Training</h4>
-                  <p class="card-text">Descrption Contents here.</p>
-                </div>
-              </figure>
-              </div>
-         
-            <div class="col-lg-4 col-md-3">
-              <figure>
-              <div class="gallery-item">
-                <a href="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                  <img src="assets/img/Webiste Pictures/IMG-20161129-WA0065.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Descrption Of Training</h4>
-                <p class="card-text">Descrption Contents here.</p>
-              </div>
-            </figure>
-            </div>
-           
-            <div class="col-lg-4 col-md-3">
-              <figure>
-              <div class="gallery-item">
-                <a href="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                  <img src="assets/img/Webiste Pictures/IMG-20161129-WA0064.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Descrption Of Training</h4>
-                <p class="card-text">Descrption Contents here.</p>
-              </div>
-            </figure>
-            </div>
-          </div>
-  
         </div>
-      </table>
-      </section>
-    <!-- ======= End Of Training Section ======= -->
+    </section>
+
+     <!-- ======= End Of Training Section ======= -->
 
 
   <!-- ======= Clients Section ======= -->
@@ -788,6 +720,55 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/valde.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="demo/js/valde.min.js"></script>
+  <script src="dist/js/glightbox.js"></script>
+  <script src="demo/js/site.js"></script>
+  <script>
+      var lightbox = GLightbox();
+      lightbox.on('open', (target) => {
+          console.log('lightbox opened');
+      });
+      var lightboxDescription = GLightbox({
+          selector: '.glightbox2'
+      });
+      var lightboxVideo = GLightbox({
+          selector: '.glightbox3'
+      });
+      lightboxVideo.on('slide_changed', ({ prev, current }) => {
+          console.log('Prev slide', prev);
+          console.log('Current slide', current);
+
+          const { slideIndex, slideNode, slideConfig, player } = current;
+
+          if (player) {
+              if (!player.ready) {
+                  // If player is not ready
+                  player.on('ready', (event) => {
+                      // Do something when video is ready
+                  });
+              }
+
+              player.on('play', (event) => {
+                  console.log('Started play');
+              });
+
+              player.on('volumechange', (event) => {
+                  console.log('Volume change');
+              });
+
+              player.on('ended', (event) => {
+                  console.log('Video ended');
+              });
+          }
+      });
+
+      var lightboxInlineIframe = GLightbox({
+          selector: '.glightbox4'
+      });
+    </script>
 
 </body>
 

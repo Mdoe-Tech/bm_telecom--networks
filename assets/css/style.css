@@ -926,6 +926,256 @@ section {
   fill: #11dbcf;
 }
 
+
+
+/* Our Training Section
+--------------------------------*/
+.box-container {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 1.4em;
+  width: 100%;
+}
+
+.box {
+  list-style-type: none;
+  float: left;
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+  transition: opacity 0.2s, transform 0.35s;
+}
+
+.box.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.4s, transform 0.35s;
+}
+
+.box .inner {
+  padding: 10px;
+  position: relative;
+}
+
+.box a {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.box img {
+  width: calc(100% + 50px);
+  max-width: calc(100% + 50px);
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-40px, 0, 0);
+}
+
+.box a::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.three-cols .box {
+  width: 100%;
+}
+
+.four-cols .box {
+  width: 23.1%;
+}
+
+.four-cols .box:nth-child(4n+0) {
+  margin-right: 0;
+}
+
+.four-cols .box:nth-child(4n+1) {
+  clear: both;
+  margin-left: 0;
+}
+
+.options-list {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ececec;
+  border-radius: 2px;
+}
+
+.options-list .option {
+  overflow: hidden;
+  border-bottom: 1px solid #ececec;
+}
+
+.options-list .option .name {
+  font-weight: 600;
+  display: inline-block;
+  width: 23%;
+  float: left;
+  text-align: left;
+  padding: 14px 17px;
+  color: #000;
+  font-size: 0.89em;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif !important;
+}
+
+.options-list .option .value {
+  display: inline-block;
+  width: 65%;
+  float: left;
+  padding: 14px 17px;
+  text-align: left;
+  line-height: 1.7em;
+  font-size: 0.89em;
+  border-left: 1px solid #eee;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif !important;
+}
+
+.options-list .option .type {
+  color: #ed7205;
+  font-weight: 600;
+}
+
+.params-list {
+  margin-bottom: 11em;
+}
+
+.option-code {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ececec;
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-top: 0;
+  margin-bottom: 48px;
+}
+
+.inline-inner {
+  padding: 40px;
+}
+
+.inline-close-btn {
+  background: #FFC107;
+  width: 200px;
+  display: block;
+  margin: auto;
+  height: 53px;
+  text-align: center;
+  line-height: 53px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+}
+
+.inline-close-btn:hover {
+  border-color: #000;
+}
+
+.especifications {
+  width: 100%;
+  max-width: 543px;
+  margin: auto;
+}
+.especifications ul {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.especifications li {
+  text-align: left;
+  list-style: initial;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2b2b2b;
+  opacity: 0;
+  line-height: 1.7em;
+  transform: translate3d(-10px, 0, 0);
+}
+
+.especifications li.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.especifications li i {
+  color: #000;
+}
+
+@media (min-width: 390px) {
+  .three-cols .box {
+      width: 50%;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .intro h1 {
+      font-size: 4.3em;
+  }
+
+  .intro {
+      max-height: 70vh;
+      min-height: 640px;
+      padding-top: 0px;
+  }
+
+  .intro h1,
+  .tagline {
+      text-align: left;
+  }
+
+  .tagline {
+      font-size: 100%;
+  }
+
+  .three-cols .box {
+      width: 33.3%;
+  }
+
+  .three-cols .box:nth-child(3n+0) {
+      margin-right: 0;
+  }
+
+  .three-cols .box:nth-child(3n+1) {
+      margin-left: 0;
+  }
+
+  .mcbutton {
+      width: auto;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .box:hover img {
+      transform: translate3d(0, 0, 0);
+      transition: opacity 0.35s, transform 0.35s;
+  }
+
+  .box:hover a::before {
+      opacity: 0.3;
+      transition: opacity 0.5s;
+  }
+}
+
+/* End Of Training Section
+--------------------------------*/
+
+
+
+
+
+
 /* Clients Section
 --------------------------------*/
 #clients {
@@ -961,8 +1211,12 @@ section {
   background-color: #f22a2a;
 }
 
+
+
+
 /* Our Portfolio Section
 --------------------------------*/
+
 #portfolio {
   background: #fff;
   padding: 30px 0;
