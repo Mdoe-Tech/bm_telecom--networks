@@ -1171,11 +1171,6 @@ section {
 /* End Of Training Section
 --------------------------------*/
 
-
-
-
-
-
 /* Clients Section
 --------------------------------*/
 #clients {
@@ -1578,8 +1573,8 @@ section {
 {
   position: fixed;
   right: 30px;
-  bottom: 0px;
-  font-size:40px;
+  bottom: 50px;
+  font-size:30px;
   color:red;
   cursor: pointer;
   z-index: 1000%;
@@ -1589,7 +1584,7 @@ section {
 {
   position: fixed;
   right: 20px;
-  bottom: 80px;
+  bottom: 87px;
   width: 250px;
   height: 80vh;
   background: silver;
