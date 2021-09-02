@@ -68,10 +68,9 @@
     <div class="chat_icon">
       <i class="fa fa-comments" aria-hidden="true"></i>
     </div>
-  
     <div class="chat_box">
       <div id="chat" class="conv-form-wrapper">
-      <form action="chatbot.php" method="POST" class="hidden">
+      <form action="chatbot.php" method="post" role="form" > 
         <select data-conv-question="Hello! welcome to BM Telecomms & Networks, can i help you?" name="first-question">
           <option value="yes">Yes</option>
           <option value="sure">Sure!</option>
@@ -81,6 +80,7 @@
       <input type="text" data-conv-question="For More Information Please follow the Instructions." data-no-answer="true">
       <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
       <input data-conv-question="Now tell me your valid phone number" type="number" data-minlength="10" id="senha" name="number" required placeholder="number">
+      <input type="text" name="message" data-conv-question="Tell us what can we help you, please!!.">
       <input type="text" name="name" data-conv-question="Okay, Thank you for contacting us, we will get in touch with you soon.!!" data-no-answer="true">
       </form>
     </div>
@@ -108,7 +108,7 @@
               <ul>
                 <li class="dropdown"><a href="telephony.html"><span>Telephony</span> <i ></i></a>
                   <ul>
-                    <li><a href="#">IP PBX Systems</a></li>
+                    <li><a href="#ip">IP PBX Systems</a></li>
                     <li><a href="#tele">Teleconferencing System</a></li>
                     <li><a href="#">Telephone Sets</a></li>
                     <li><a href="#">Telephone Management</a></li>
