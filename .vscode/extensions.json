@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "formulahendry.code-runner"
+        "formulahendry.code-runner",
+        "primafuture.open-php-html-js-in-browser"
     ]
 }
